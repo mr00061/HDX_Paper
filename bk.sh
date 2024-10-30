@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+phtemp="4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0"
+name1="nt17"
+range="1-500"
+echo $name
+sasa="7.7 8.0 8.3 8.8"
+for k in $sasa; do
+for r in $range; do
+python3 avg_error.py bk_s1_1-500_bb_shppf_8.3.dat-bk_6.5_30_data.txt.txt bk_s2_1-237_bb_shppf_8.3.dat-bk_6.5_30_data.txt.txt bk_s3_1-150_bb_shppf_8.3.dat-bk_6.5_30_data.txt.txt bk_avg_error_kint_shppf_6.5_8.3.dat
+done;
+done;
